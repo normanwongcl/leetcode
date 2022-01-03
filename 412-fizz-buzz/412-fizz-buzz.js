@@ -1,4 +1,4 @@
-/** Using hash Map
+/** Using hash Map | O(n) Time | O(1) Space 
  * @param {number} n
  * @return {string[]}
  */
