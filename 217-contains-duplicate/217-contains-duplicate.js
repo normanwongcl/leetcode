@@ -1,4 +1,4 @@
-/**
+/** Using an object as a Set
  * @param {number[]} nums
  * @return {boolean}
  */
