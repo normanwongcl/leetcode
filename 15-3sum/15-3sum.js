@@ -6,15 +6,15 @@ const threeSum = (nums) => {
   nums.sort((a, b) => a - b);
   const triplets = [];
 
-  for (let i = 0; i < nums.length - 2; i++) {
-    let left = i + 1;
+  for (let index = 0; index < nums.length - 2; index++) {
+    let left = index + 1;
     let right = nums.length - 1;
-    if (nums[i - 1] !== nums[i] || i === 0) {
+    if (nums[index - 1] !== nums[index] || index === 0) {
       while (left < right) {
-        const currentSum = nums[i] + nums[left] + nums[right];
+        const currentSum = nums[index] + nums[left] + nums[right];
 
         if (currentSum === 0) {
-          triplets.push([nums[i], nums[left], nums[right]]);
+          triplets.push([nums[index], nums[left], nums[right]]);
           left++;
           right--;
           while (left < right && nums[left] === nums[left - 1]) {
