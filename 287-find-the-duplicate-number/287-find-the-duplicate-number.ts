@@ -1,3 +1,4 @@
+// Using built-in Set Object
 const findDuplicate = (nums: number[]): number => {
   const set: Set<number> = new Set();
 
