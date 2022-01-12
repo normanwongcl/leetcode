@@ -1,3 +1,4 @@
+// O(n) - Time | O(1) - Space
 const maxArea = (heights: number[]): number => {
   // define initial maxArea, leftPointer, rightPointer
   let [maxArea, left, right]: number[] = [0, 0, heights.length - 1];
