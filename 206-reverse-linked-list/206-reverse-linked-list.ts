@@ -1,4 +1,4 @@
-/**
+/** O(n) Time | O(1) Space
  * Definition for singly-linked list.
  * class ListNode {
  *     val: number
@@ -11,8 +11,7 @@
  */
 
 function reverseList(head: ListNode | null): ListNode | null {
-    let current: ListNode | null = head; 
-    let prev: ListNode | null = null;
+    let [current, prev]: (ListNode | null)[] = [head, null]; 
     
     while(current) {
         let newTemp = current.next;
