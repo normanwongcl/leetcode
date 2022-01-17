@@ -10,7 +10,7 @@
  * }
  */
 
-function reverseList(head: ListNode | null): ListNode | null {
+const reverseList = (head: ListNode | null): ListNode | null => {
     let [current, prev]: (ListNode | null)[] = [head, null]; 
     
     while(current) {
