@@ -5,19 +5,18 @@
  *     this.next = (next===undefined ? null : next)
  * }
  */
-/** 
+
+/** Using recursion - O(n) Time | O(n) Space
+ * Picture visualizing the recusion: https://i.imgur.com/F8R3eVA.png
  * @param {ListNode} head
  * @return {ListNode}
  */
 const reverseList = (head) => {
-    let current = head; 
-    let prev = null;
-    
-    while(current) {
-        let newTemp = current.next;
-        current.next = prev; 
-        prev = current;  
-        current = newTemp;
+    if (head === null || head.next === null) {
+        return head;
     }
-    return prev;
+    let p = reverseList(head.next);
+    head.next.next = head;
+    head.next = null;
+    return p;
 };
