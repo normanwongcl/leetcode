@@ -1,3 +1,5 @@
+// Linked list solution by hbjORbj: https://leetcode.com/problems/design-linked-list/discuss/924760/Easy-JS-Solution
+
 class ListNode {
   constructor(value, next) {
     this.value = value == undefined ? 0 : value;
