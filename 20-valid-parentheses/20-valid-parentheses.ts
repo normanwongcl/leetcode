@@ -1,5 +1,5 @@
 interface IHash {
-  [key: string]: string | undefined;
+  [key: string]: string;
 }
 
 // Hashmap to lookup left bracket
