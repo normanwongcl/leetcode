@@ -10,7 +10,6 @@
  * @param {TreeNode} root
  * @return {number[]}
  */
-
 const rightSideView = (root) => {
   // If root is null return an empty array
   if (!root) return [];
