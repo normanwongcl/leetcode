@@ -1,4 +1,4 @@
-/** Using sliding window pattern - O(n) - Time | O(1) Space
+/** O(n) - Time | O(1) Space
  * @param {number[]} nums
  * @return {number}
  */
