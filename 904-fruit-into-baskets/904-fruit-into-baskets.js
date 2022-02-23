@@ -1,4 +1,4 @@
-/** Using sliding window pattern, O(n) - Time | O(k) space, where k is number of distinct characters.
+/** Using sliding window pattern, O(n) - Time | O(1) space
  * @param {number[]} fruits
  * @return {number}
  */
@@ -16,7 +16,7 @@ const totalFruit = (fruits) => {
       fruitFrequency[currentChar]++;
     }
 
-    // shrink the sliding window until we are have "k" distinct characters in charFrequency
+    // shrink the sliding window until we are have 2 distinct characters in fruitFrequency
     while (Object.keys(fruitFrequency).length > 2) {
       fruitFrequency[fruits[windowStart]]--;
 
