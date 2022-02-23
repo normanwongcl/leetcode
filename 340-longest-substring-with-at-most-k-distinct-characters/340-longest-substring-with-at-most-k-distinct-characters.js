@@ -1,4 +1,5 @@
-/** Using sliding window pattern, O(n) - Time | O(k) space, where k is number of distinct characters.
+/** Using sliding window pattern + hashmap 
+ * O(n) - Time | O(k) space, where k is number of distinct characters.
  * @param {string} s
  * @param {number} k
  * @return {number}
