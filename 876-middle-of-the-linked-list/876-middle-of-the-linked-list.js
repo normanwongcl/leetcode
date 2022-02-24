@@ -17,5 +17,5 @@ const middleNode = (head) => {
     fast = fast.next.next;
     slow = slow.next;
   }
-  return slow;
+  return slow; // The resulting node of the slow pointer is the middle of the linked list
 };
