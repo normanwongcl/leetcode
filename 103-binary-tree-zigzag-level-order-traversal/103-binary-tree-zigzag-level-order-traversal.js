@@ -37,6 +37,8 @@ const zigzagLevelOrder = (root) => {
       if (currentNode.right) {
         queue.push(currentNode.right);
       }
+
+      // Check current traversal direction
       if (leftToRight) {
         currentLevel.push(currentNode.val);
       } else {
@@ -45,6 +47,8 @@ const zigzagLevelOrder = (root) => {
     }
 
     result.push(currentLevel);
+
+    // reverse the traversal direction
     leftToRight = !leftToRight;
   }
   return result;
