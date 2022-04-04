@@ -1,4 +1,4 @@
-/**
+/** Time Complexity: O(nlogn), Space Complexity: O(n)
  * @param {number[][]} intervals
  * @return {number[][]}
  */
